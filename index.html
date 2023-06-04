@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="animate.css">
+	<script src="wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<style type="text/css">
+		@font-face {font-family: 'MapoDacapo';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoDacapoA.woff') format('woff');font-weight: normal;font-style: normal;}
+		@font-face {font-family: 'Pretendard-Regular';src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');font-weight: 400;font-style: normal;}
+
+
+
+		h1 {font-family: 'MapoDacapo'; font-size: 150px; text-align: center;margin: 0px; padding-top: 300px;color: #FF4900;}
+		h2 {font-family: 'Pretendard-Regular';text-align:center;color:white; margin: 0px; padding: 130px;}
+		p {font-family: 'MapoDacapo'; font-size:20pt; }
+		h3 {font-family: 'Pretendard-Regular'; font-size: 45pt; color: black black;background: #FF4900}
+		h4 {font-family: 'MapoDacapo'; font-size:20pt; }
+		h5 {;font-size: 50pt; text-align:center;padding: 0px; padding-top: 100px;font-family: 'MapoDacapo';color: #FF4900; margin: 0px;}
+
+
+
+		section, body, html  {margin: 0px;}
+		html {width: 1700px;}
+		.mainback {background: url(./img/back.jpg) no-repeat center center ;width: 1700px; height: 1102px;background-attachment: fixed;}
+		.backblack {background: black;}
+		.backblack h2 {padding: 20px;width: 750px; text-align: left;}
+		.backblack h3 {margin-top: 0px;font-size: 30pt; text-align: center;}
+
+
+		.wapper {margin: auto; width: 1300px;}
+		.intro {height: 550px;}
+		.pic {width: 1300px;}
+
+		.pic {display:flex;flex-wrap:wrap;align-items:flex-start;margin:30px 0;}
+		.pic img {
+		    width:calc(25% - 10px);
+		    margin:0 15px 15px 0;
+		}
+		.pic img:nth-of-type(4n),
+				
+		.pic2 {width:1700px; border: red; height: 400px; margin: 0px auto;}
+		img {width: 400px;float: left; margin: 10px}
+		.back2 {background: url(./img/back22.jpg) no-repeat center center ;width: 1700px; height: 1300px;background-attachment: fixed; margin: 0px}
+		.ment {background: none;}
+		.ment h3:hover {background: white; color: background: #FF4900}
+		
+
+
+		.back3 {background: url(./img/back3.jpg) no-repeat center center ;width: 1700px; height: 1300px;background-attachment: fixed;margin: 0px}
+		.back3 h2 {background: #FF4900; color: white; width: 600px;padding: 50px;font-size: 13pt;margin: 0px; margin-bottom: 30px;}
+		.back3 h1 {color: white;font-size: 50pt; text-align: left;padding: 0px; padding-top: 300px;}
+		.back4 {background: url(./img/back4-4.jpg) no-repeat center center ;width: 1700px; height: 1500px;margin: 0px;background-attachment: fixed}
+		.back4 h2 {color: black; background: white; padding: 5px;}
+		.back5 {background: #D9D9D9;color; height: 900px;}
+	
+		.back5 p {text-align: center;}
+		.point {cursor: pointer;}
+		.container {display: flex; width: 1300px; padding-top: 130px;}
+		.container img {flex: 1; width: 300px; height: 320px;object-fit: contain;
+  margin: 5px;
+		}
+
+		.container {display: flex;}
+		.container:hover {
+    background-color: transparent;
+  }
+
+		.image-item {width: 300px; height: 320px;align-items: center;justify-content: center;position: relative;overflow: hidden;}
+			.image-item img { object-fit: contain;  max-width: 100%; max-height: 100%;
+		  transition: transform 0.3s ease;}
+			.image-item:hover img {
+		  transform: scale(1.2);}
+
+		  .back6 {background: url(./img/back6.png) no-repeat center center ;width:1700px; height:900px;background-attachment: fixed;margin: 0px}
+		  .oneimage-container {display: flex;flex-direction: column;position: absolute;left: 310px;
+top: 7800px;
+			}
+
+			.oneimage-item {
+			  margin-bottom: 10px; /* 이미지 간격을 조정할 수 있습니다. */
+			}
+			.twoimage-container {display: flex;flex-direction: column;position: absolute;right: 100px;
+top: 7982px;
+		height:450px;	}
+		.image-text-container {gap: 150px;
+		  display: flex;
+		  align-items: center; /* 세로 방향에서 가운데 정렬 */ margin-top: 100px;}
+
+		.image-text-container img {
+		  margin-right: 10px; 
+		}
+		.watter {width:px; /* 이미지 컨테이너의 최대 너비 */ margin: auto;
+  }
+
+  .watter img {
+    max-width: 200px;
+    height: auto;
+  }
+
+
+
+	
+
+
+
+
+  	  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    }
+	
+		li{list-style: none;display: block;margin: 17px;}
+		.menu{display: flex; justify-content: space-evenly; text-decoration-line: none;margin: 0px;font-family: 'MapoDacapo'; background:black; }
+		a{text-decoration-line: none; text-decoration: none;padding: 3px 30px ; color: white;}
+		a:hover{transition: all 0.5s; background: white;border-radius: x;color: red;transition: all 0.5s}
+		mark {padding: 1px; color: white;background: skyblue;}
+
+
+
+
+
+
+
+
+
+		span {display: block;}
+		span:not(.light) { opacity: 0; animation: flashText 1s ease-out alternate infinite;}
+		span.light { position: relative; display: inline-block;
+		  &:before {
+		    position: absolute;
+		    left: 0;
+		    top: -10%;
+		    width: 100%;
+		    height: 120%;
+		    background: #fff;
+		    filter: blur(10px);
+		    content: "";
+		    opacity: 0;
+		    animation: flash .8s ease-out alternate infinite;}}
+		@keyframes flash{ to {opacity: 1;}}
+
+		@keyframes flashText {to {opacity: 0.15;}}
+
+
+	
+    @keyframes fadeInUp { 0% {opacity: 0;transform: translate3d(0, 100%, 0);}
+        to {opacity: 1;transform: translateZ(0);}}
+
+ 	 .test_obj {position: relative; animation: fadeInUp 1s; animation-delay: 0.5s ;padding-top: 100px; opacity: 1}
+
+
+ 	  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .img{
+    animation: slideInFromBottom 1s ease; animation-delay: 0.5s}
+
+
+
+
+
+</style>
+ 
+
+
+
+
+	<title></title>
+</head>
+
+
+<body>
+	<nav>
+	<nav class="backblack">
+
+		<div class="wapper">
+			<ul class="menu">
+				<li><a href="#tab1"> intro </a></li>
+				<li><a href="#tab2"> about </a></li>
+				<li><a href="#tab3"> 1 minture </a></li>
+				<li><a href="#tab4"> object </a></li>
+			</ul>
+		</div>
+	</nav>
+</nav>
+
+	<section class="mainback">
+		<div class="wapper">
+		 <h1> Butterfly effect </h1>
+		 <p>
+		   <span class="light">Africa in Water Shortage </span> 
+		</p>
+
+		<p style="position:absolute; left:480px; top:180px;">
+		   <span class="light"> Global Warming From Fossil Fuels </span> 
+		</p>
+
+		<p style="position:absolute; left:918px; top:770px;">
+		   <span class="light"> A village in the Indian state of Mahathra. </span> 
+		</p>
+
+	
+	 </div>	
+	</section>
+
+
+	<section class="back2" id="tab1">
+	 <div class="wapper">
+			<div class="intro"> 
+			<h2> 무분별한 자원 낭비와 지켜지지 않는 환경규제. <br>
+				“양심있는 시민"을 저버린 의무의식으로 환경은 더럽혀지고 있다.  <br>
+					사실 이 말은 형식적으로 느껴질지도 모른다.
+			</h2>
+			</div>
+
+			<div class="ment">
+
+		<h3> 환경오염으로 인한 사망, 매년 전 세계 6명 중 1명꼴 </h3>
+	<h3> 27억명이 1년에 한달 정도 물부족 경험 </h3>
+	<h3> 삼림 벌채 중단되지 않으면 100년 안에 모두 사라질수도 </h3>
+	<h3> 매년 1천400만톤의 플라스틱 폐기물 바다로 유입 </h3>
+	</div>
+	
+	</section>
+
+	<section class="backblack" style="height: 400px">
+		<h2 style=" text-align: center;margin: auto; padding-top: 170px;"> 이 광활한 우주에서 내가 일회용 수저 한 번 안 쓴다고 무엇이 바뀔 것인가? </h2>
+	</section>
+
+	<section class="back3" id="tab2">
+		<div class="wapper">
+			<div class="text">
+		<div style="">
+		<h1> 나비효과란? </h1>
+		</div>
+
+		<div class="wow img" style="margin-top: 40px;" >
+		<h2> 나비의 작은 날갯짓처럼 미세한 변화, 작은 차이, 사소한 사건이 추후 예상하지 못한 엄청난 결과나 파장으로 이어지게 되는 현상을 말한다. 
+		혼돈이론에서 초기값의 미세한 차이에 의해 결과가 완전히 달라지는 현상을 뜻한다. 과학 이론이지만 사회현상을 설명하는 광범위한 용어로 사용된다 </h2>
+				<h2> 무시해도 될 만큼 작은 차이나 미약하고 사소한 행위로 시작되었으나 연쇄적이고 
+		점진적으로 조금씩 큰 파장을 일으키면서 결국에는 전혀 예상치 못했던 큰 변화를 
+		초래하는 경우에 이 용어를 사용한다. 아주 사소한 것도 후에 큰 사건으로 비화될 
+		수 있다는 것과 초기치의 미묘한 차이가 증폭되어 엉뚱한 결과를 초래하기도 하므로 장기예측은 그만큼 어렵다는 두가지 의미를 내포한다. </h2>
+		</div>
+		</div>
+		</div>
+
+	</section>
+
+<section class="back4" style="height: 2500px;" id="tab3">
+	<div class="wapper">
+		<h2 style="position: absolute; left: 306.33px;top: 5100px; width:1000px;" class="wow img"> 
+		태어난 환경, 살고 있는 곳, 만나는 사람. 공감을 바라기엔 평생 겪은게 다른 우리는 서로를 이해 할 수 없다. </h2>
+		<h2 style="position: absolute; width:1000px;left:306.33px; top: 6079.87px;"class="wow img"> 
+		어쩌면 시간만이 모두에게 공평하지 않을까? <br>
+
+		똑같은 시간의 기준으로  얼마나 다른 삶을 살 수 있는지 비교 해본다.</h2>
+	</div>
+</section>
+
+<section class="back5" id="tab4">
+	<div class="wapper">
+		<h5> Object </h5>
+		<p> 오브제를 눌러 환경영향을 느껴보세요 </p>
+		<div class="container">
+			
+			<a href="#tab5" class="width:300px;">
+			 <div class="image-item">
+			
+		  <img src="img/water.png" alt="Image 1" class="point" >
+		  
+		   </div>
+		 </a>
+		   
+		   <a href="#tab6" class="width:300px;">
+		    <div class="image-item">
+		  <img src="img/all.png" alt="Image 2">
+		   </div>
+		 </a>
+
+		 <a href="#tab7" class="width:300px;">
+		    <div class="image-item">
+		  <img src="img/shower.png" alt="Image 3">
+		</div>
+	</a>
+	<a href="#tab8" class="width:300px;">
+		 <div class="image-item">
+		  <img src="img/car.png" alt="Image 4">
+		</div>
+	</a>
+		</div>
+
+
+
+	</div>
+</section>
+
+
+
+
+<section class="back6">
+
+	<img src="img/water5.jpg" style="position: absolute;
+top: 7700px; left: 355.1px;
+">
+
+	
+	<img src="img/car5.jpg" style="width: 210px;position: absolute; left: 1018px;
+top: 7959.13px;">
+
+
+	<img src="img/all5.jpg" style="width: 141px;position: absolute;left: 259.46px;
+top: 8164px; ">
+	<img src="img/plactic.jpg" style="width:183px; position: absolute;left: 1265.31px;
+top: 7570px;
+ ">
+
+</section>
+
+-----------
+<section class="backblack" style="height:1300px;" id="tab5">
+
+	<div class="wapper" style="padding-top:100px;">
+			<h5 style="padding-top: 50px;"> the dangers of microplastics </h5>
+
+				<div class="image-text-container">
+					<div class="watter">
+		  	<img src="img/water.png" alt="Image" style="width: 100px; max-height: 300px;"> </div>
+
+			  	<div class="text">
+				  	<h3> 플라스틱 폐기물 양은 1천200만 톤으로 <br>1분당 쓰레기 트럭 한 대 분량에 해당한다</h3>
+						<h2>바다의 가장 깊은 곳에서부터 우리가 소비하는 음식과 물까지 미세플라스틱은 인간과 지구의 건강에 점점 더 큰 위협이 되고 있다.섭취를 통해 체내로 들어올 수 있고 플라스틱의 원재료 자체의 독성은 낮으나, 제조 시 사용되는 가소제·난연제 등의 첨가제가 추출되거나 환경 중 독성물질이 미세플라스틱 표면에 흡착되어 생물 체내에 축적되는 것이 우려되고 있으며, 현재까지 해산물 섭취로 인체에 유입되는 미세플라스틱에 의한 위해성은 낮다고 판단하지만 플라스틱의 사용량과 환경 배출을 고려할 때 사전 예방적으로 플라스틱과 미세플라스틱 관리가 필요하다.</h2>
+					</div>
+
+				</div>
+			<img src="img/img4.png" style="width: 1300px; padding-top: 100px;" class="wow img">
+	</div>
+
+</section>
+
+
+
+<section class="backblack" style="height:1300px;"id="tab6">
+
+	<div class="wapper" style="padding-top:100px;">
+			<h5 style="padding-top: 50px;"> a waste drug </h5>
+
+				<div class="image-text-container">
+		  	<img src="img/all.png" alt="Image" style="width:270px;">
+
+			  	<div class="text">
+				  	<h3> 전 세계 강 25%. 잠재적 독성이 있는 수준</h3>
+						<h2>폐의약품은 유효기간이 지났거나 먹다 남은 약을 지칭한다. 땅에 매립되거나 하수구로 버려질 경우 항생물질 등 약 성분으로 인해 토양오염과 수질오염의 원인이 되고 슈퍼버그(슈퍼박테리아)와 같은 항생제 내성균 확산 문제로 생태계와 인류 건강을 위협한다. 폐의약품 그 자체로는 별문제가 없을지라도, 매립 및 하수 처리 과정에서 약의 화학성분이 다른 물질에 반응하면 독성이 증폭되거나 항생제 내성을 가진 초강력 슈퍼버그가 될 수 있는 것이다. </h2>
+					</div>
+
+				</div>
+			<img src="img/img3.png" style="width: 1300px; padding-top: 100px;" class="wow img">
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="backblack" style="height:1300px;" id="tab7">
+
+	<div class="wapper" style="padding-top:100px;">
+			<h5 style="padding-top: 50px;"> a shortage of water </h5>
+
+				<div class="image-text-container">
+		  	<img src="img/shower.png" alt="Image" style="width:270px;">
+
+			  	<div class="text">
+				  	<h3> 가정에서 쓰는 물 4분의 1.욕실에서</h3>
+						<h2>샤워 시간을 5분에서 3분으로, 2분만 줄여도 한 번 샤워할 때마다 24리터의 물을 절약할 수 있다. 또 욕조에 물을 받아 놓고 목욕하는 것보다는 샤워하는 게 물 절약에 도움이 된다고 생각하기 쉽지만,만약 샤워 시간이 15분 이상이라면 이야기는 달라진다. 15분 간 샤워를 하면 보통 180리터 전후의 물을 사용하게 되는데 샤워 시간을 절반으로 줄이면 물 사용량도 절반으로 줄어드는 효과가 있다.</h2>
+					</div>
+
+				</div>
+			<img src="img/img1.png" style="width: 1300px; padding-top: 100px;" class="wow img">
+	</div>
+</section>
+ 
+
+<section class="backblack" style="height:1300px;" id="tab8">
+
+	<div class="wapper" style="padding-top:100px;">
+			<h5 style="padding-top: 50px;"> air pollution </h5>
+
+				<div class="image-text-container">
+		  	<img src="img/car.png" alt="Image" style="width:270px;">
+
+			  	<div class="text">
+				  	<h3> 같은 서울 신촌에서도 고작 
+								200m 차이로 공기질이 <br> 
+								다를 수 있다. 
+								교통량 때문이다.</h3>
+						<h2>공공교통 확충이 곧 기후정의다. 기후위기와 경제 침체, 그리고 사회적 양극화 심화 속에서 대중교통의 공공성을 재고하고 모든 시민의 이동권 보장을 통한 시민권의 확대라는 교통복지 실현을 해나가야 한다는 과제가 우리 앞에 놓여 있다. “이동권이 곧 생존권"이 되는 전장연의 지하철 시위의 목소리가 이를 명확하게 보여준다. 서울시는 대중교통 영역에 대한 지원을 ‘적자'로 치부할 것이 아니라 ‘필수 공공지출'로 인식을 전환하고 그에 따른 새로운 정책을 시행해나야 한다.</h2>
+					</div>
+
+				</div>
+			<img src="img/img2.png" style="width: 1300px; padding-top: 100px;" class="wow img">
+	</div>
+</section>
+
+
+
+
+
+
+</section>
+<section class="backblack" style="padding: 100px;">
+
+	
+</section>
+
+
+
+
+
+
+
+
+<footer class="backblack" style="height: 100px;">
+	<h2 style=" text-align: center; margin:auto;"> © Copyright 2023.
+
+Bang jihyun all rights reserved.
+	
+</footer>
+
+
+
+
+
+
+</body>
+</html>
